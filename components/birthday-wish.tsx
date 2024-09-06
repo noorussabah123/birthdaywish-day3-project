@@ -3,14 +3,13 @@
 
 
 // Import necessary dependencies
-import React, { useState, useEffect, Key } from 'react'
+import React, { useState, useEffect} from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { motion, AnimatePresence } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import { FaBirthdayCake, FaGift } from 'react-icons/fa'
 import { GiBalloons } from 'react-icons/gi'
-import { div } from 'framer-motion/client'
 
 // Define type for Confetti component props
 type ConfettiProps = {
@@ -92,7 +91,6 @@ export default function BirthdayWish() {
         transition={{ duration: 0.5 }}
         className="w-full max-w-md"
       >
-        {/* Birthday card */}
         <Card className="bg-teal-100 mx-auto overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 border-2 border-black">
           {/* Card header with birthday message */}
           <CardHeader className="text-center">
